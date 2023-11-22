@@ -1,0 +1,104 @@
+@use "./../foundation/global" as *;
+.l-scroll {
+  &__area {
+    overflow: hidden;
+    @include mq(md) {
+      overflow: auto;
+    }
+  }
+  &__wrap {
+    display: flex;
+    @include mq(md) {
+      flex-direction: column;
+      // gap: 2rem;
+    }
+  }
+
+  // scrolledPanel
+  &__item {
+    // background-color: $c-main;
+    height: 100vh;
+    @include mq(md) {
+      height: 100%;
+    }
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // @include mq(md) {
+    //   flex-direction: column;
+    // }
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: right;
+    align-items: center;
+    @include mq(md) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__list-item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 20rem;
+    height: 100%;
+    height: 80vh;
+    height: calc(100vh - 16rem);
+    @include mq(md) {
+      width: 40%;
+      height: 50vh;
+    }
+  }
+
+  &__item.first {
+    // background-color: white;
+    // background-color: $c-main;
+
+    // padding-left: 32rem;
+    margin-left: 32rem;
+    @include mq(xl) {
+      // padding-left: 26rem;
+      margin-left: 26rem;
+    }
+    @include mq(lg) {
+      // flex-direction: column;
+      // padding-top: 6rem;
+      // padding-bottom: 6rem;
+    }
+    @include mq(md) {
+      margin-left: 0;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  &__item.center {
+    // display: flex;
+    // justify-content: space-evenly;
+    // align-items: center;
+
+    @include mq(md) {
+      // flex-direction: column;
+      // justify-content: left;
+      // align-items: left;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  &__item.last {
+    // background-color: $c-main;
+    // color: $c-base;
+    // padding-left: 32rem;
+    @include mq(xl) {
+      // padding-left: 26rem;
+    }
+    @include mq(md) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      // visibility: hidden;
+    }
+  }
+}
