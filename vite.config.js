@@ -5,8 +5,9 @@ const root = "src";
 
 export default defineConfig({
   root,
-  base: "/",
-  publicDir: "./public",
+  base: "./",
+  // base: "/",
+  publicDir: "../public",
   build: {
     outDir: "../dist",
     rollupOptions: {
