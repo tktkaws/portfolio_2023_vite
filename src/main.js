@@ -11,6 +11,7 @@ import {
 import { navClear } from "./modules/navClear";
 import replaceHeadTags from "./modules/replaceHeadTags";
 import { runLoadingAnimation } from "./modules/loadingAnimation";
+import { runMvSlider } from "./modules/mvSlider";
 
 clickToggleClass();
 
@@ -39,7 +40,8 @@ barba.init({
     {
       namespace: "home",
       beforeEnter(data) {
-        runLoadingAnimation();
+        // runLoadingAnimation();
+        runMvSlider();
       },
       afterLeave(data) {},
     },
