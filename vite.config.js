@@ -18,6 +18,7 @@ export default defineConfig({
         works02: resolve(root, "works02.html"),
         works03: resolve(root, "works03.html"),
         works04: resolve(root, "works04.html"),
+        timeline: resolve(root, "timeline.html"),
       },
     },
   },
