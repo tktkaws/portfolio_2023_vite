@@ -17,6 +17,8 @@
 .p-home-mv__scroll-area {
   grid-row: 1/-1;
   grid-column: 1/1;
+  height: 100%;
+  height: calc(100vh - 8rem + 1px);
 }
 
 .p-home-mv__title {
